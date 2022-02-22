@@ -15,30 +15,35 @@ body,
   height: 35px;
   margin-top: 175px;
   width: 250px;
+  border-radius: 2px;
 }
 
 .autocomplete-container {
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
   margin-top: 2px;
-  max-height: 245px;
+  max-height: 240px;
   max-width: 260px;
   overflow: scroll;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .autocomplete-value {
-  font-size: 22px;
-  min-height: 37px;
+  font-size: 18px;
+  min-height: 30px;
   min-width: 250px;
   padding: 5px;
 }
+.autocomplete-value:hover {
+  cursor: pointer;
+  background-color: #ececec;
+}
 
 .selected-value {
-  background-color: gray;
-  font-size: 22px;
-  font-weight: 700;
-  min-height: 37px;
-  min-width: 250px;
-  padding: 5px;
+  background-color: #ececec;
+}
+
+.no-options:hover {
+  cursor: default;
+  background-color: #ffffff;
 }

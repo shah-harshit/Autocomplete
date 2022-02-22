@@ -54,7 +54,7 @@ const App = () => {
         onChange={handleInputChange}
         onKeyDown={onKeyDown}
         value={searchValue}
-        placeholder="type a country..."
+        placeholder="Type a country..."
       />
       {showFilteredValues && searchValue && (
         <AutoComplete

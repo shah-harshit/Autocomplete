@@ -12,18 +12,16 @@ export const AutoComplete = ({
         filteredValues.map((value, index) => (
           <div
             key={index}
-            className={
-              selectedValueIndex === index
-                ? "selected-value"
-                : "autocomplete-value"
-            }
+            className={`autocomplete-value ${
+              selectedValueIndex === index ? "selected-value" : ""
+            }`}
             onClick={handleValueClick}
           >
             {value}
           </div>
         ))
       ) : (
-        <div className="autocomplete-value">No Data Found</div>
+        <div className="autocomplete-value no-options">No Options</div>
       )}
     </div>
   );
